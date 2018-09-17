@@ -1,0 +1,32 @@
+<Qucs Schematic 0.0.19>
+<Properties>
+  <View=-41,-22,1342,972,1,0,16>
+  <Grid=10,10,0>
+  <DataSet=bpf_915_qucs.dat>
+  <DataDisplay=bpf_915_qucs.sch>
+  <OpenDisplay=1>
+  <Script=bpf_915_qucs.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 80 483 463 403 3 #c0c0c0 1 00 0 0 1e+09 5e+09 0 -40 5 0 1 -1 0.2 1 315 0 225 "" "" "">
+	<"dBS11" #000000 0 3 0 0 0>
+  </Rect>
+  <Rect 640 485 488 405 3 #c0c0c0 1 00 0 0 1e+09 5e+09 0 -50 10 0 1 -1 0.2 1 315 0 225 "" "" "">
+	<"dBS21" #000000 0 3 0 0 0>
+	  <Mkr 9.13824e+08 106 -482 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>

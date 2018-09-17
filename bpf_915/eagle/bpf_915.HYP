@@ -1,0 +1,290 @@
+**********************************************************************
+* Exports the board to HyperLynx Signal-Integrity Transfer Format (.HYP)
+* Version 2.00 9/11/97 -- 4.15 12/03/2012
+*
+* EAGLE Version 7.6.0 Copyright (c) 1988-2016 CadSoft
+*
+* HyperLynx Board exported from:
+* /home/radioactive/opt/Projects/bpf_915/bpf_915.brd
+* At 9/16/18 7:32 PM
+*
+* Schematic is loaded.
+*
+
+{VERSION=2.10}  Compatible with Hyperlynx version 2.10.
+{UNITS=ENGLISH LENGTH}
+
+**********************************************************************
+* Board Dimensions
+*
+{BOARD
+(PERIMETER_SEGMENT X1=0.2800 Y1=1.3500 X2=1.7080 Y2=1.3500) Wires: From Board
+(PERIMETER_SEGMENT X1=1.7080 Y1=1.3500 X2=1.7080 Y2=0.1000) Wires: From Board
+(PERIMETER_SEGMENT X1=1.7080 Y1=0.1000 X2=0.2800 Y2=0.1000) Wires: From Board
+(PERIMETER_SEGMENT X1=0.2800 Y1=0.1000 X2=0.2800 Y2=1.3500) Wires: From Board
+}
+
+**********************************************************************
+* Thickness of Copper and Dielectric Layer Data
+*
+{STACKUP
+(SIGNAL T=0.00070 P=0.00070 L=Top)
+(DIELECTRIC T=0.05970 C=4.80000 L=DL01)
+(SIGNAL T=0.00070 P=0.00070 L=Bottom)
+}
+* Total Board Thickness 0.0625 inch
+
+**********************************************************************
+* Components
+*
+{DEVICES
+(J REF="J1" NAME="MMCX-J-P-X-RA-SM1SMD" L="Top")  R180 X=1.2200 Y=1.1900 :  Lib: 195Ec_300-0004-01_rev1_b : MMCX-J-P-X-RA-SM1_SAMTEC : Pins 5
+(J REF="J2" NAME="MMCX-J-P-X-RA-SM1SMD" L="Top")  R000 X=1.2200 Y=0.2400 :  Lib: 195Ec_300-0004-01_rev1_b : MMCX-J-P-X-RA-SM1_SAMTEC : Pins 5
+(? REF="TP1" NAME="TPTP10SQ" L="Top")  R000 X=1.2200 Y=0.2400 :  Lib: testpad : TP10SQ : Pins 1
+(? REF="TP2" NAME="TPTP10SQ" L="Top")  R000 X=1.2200 Y=1.1900 :  Lib: testpad : TP10SQ : Pins 1
+}
+
+**********************************************************************
+* Pads, Smds, and Via Library
+*
+{PADSTACK=THR001,0.025
+(Top,0,0.041,0.041,0) ISAVIA Shape was Round and is now Round
+(Bottom,0,0.041,0.041,0) ISAVIA Shape was Round and is now Round
+}
+
+{PADSTACK=THR002,0.015
+(Top,0,0.031,0.031,0) ISAVIA Shape was Round and is now Round
+(Bottom,0,0.031,0.031,0) ISAVIA Shape was Round and is now Round
+}
+
+{PADSTACK=SMD003
+(Top,1,0.039,0.039,180.0) ISASMD Shape was Smd and is now Smd
+}
+
+{PADSTACK=SMD004
+(Top,1,0.040,0.040,180.0) ISASMD Shape was Smd and is now Smd
+}
+
+{PADSTACK=SMD005
+(Top,1,0.039,0.039,0.0) ISASMD Shape was Smd and is now Smd
+}
+
+{PADSTACK=SMD006
+(Top,1,0.040,0.040,0.0) ISASMD Shape was Smd and is now Smd
+}
+
+**********************************************************************
+* Nets
+*
+{NET=SIG
+(PIN X=1.2200 Y=1.1900 R=J1.SIG P=SMD004) SIG, Smd Dx: 0.0400  Dy: 0.0400
+(PIN X=1.2200 Y=0.2400 R=J2.SIG P=SMD006) SIG, Smd Dx: 0.0400  Dy: 0.0400
+(PIN X=1.2700 Y=1.1400 R=J1.GND@1 P=SMD003) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.1700 Y=1.1400 R=J1.GND@2 P=SMD003) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.1700 Y=1.2400 R=J1.GND@3 P=SMD003) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.2700 Y=1.2400 R=J1.GND@4 P=SMD003) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.1700 Y=0.2900 R=J2.GND@1 P=SMD005) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.2700 Y=0.2900 R=J2.GND@2 P=SMD005) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.2700 Y=0.1900 R=J2.GND@3 P=SMD005) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(PIN X=1.1700 Y=0.1900 R=J2.GND@4 P=SMD005) SIG, Smd Dx: 0.0394  Dy: 0.0394
+(VIA X=1.5610 Y=0.9500 P=THR001) SIG
+(VIA X=1.5610 Y=0.4900 P=THR001) SIG
+(VIA X=0.3950 Y=0.7100 P=THR001) SIG
+(VIA X=1.3100 Y=1.1400 P=THR002) SIG
+(VIA X=1.1300 Y=1.1400 P=THR002) SIG
+(VIA X=1.1300 Y=1.2400 P=THR002) SIG
+(VIA X=1.3100 Y=1.2400 P=THR002) SIG
+(VIA X=1.3100 Y=0.1900 P=THR002) SIG
+(VIA X=1.3100 Y=0.2900 P=THR002) SIG
+(VIA X=1.1300 Y=0.2900 P=THR002) SIG
+(VIA X=1.1300 Y=0.1900 P=THR002) SIG
+(SEG X1=1.1700 Y1=1.2400 X2=1.1300 Y2=1.2400 W=0.0240 L=Top) SIG
+(SEG X1=1.2700 Y1=1.2400 X2=1.3100 Y2=1.2400 W=0.0240 L=Top) SIG
+(SEG X1=1.2700 Y1=1.1400 X2=1.3100 Y2=1.1400 W=0.0240 L=Top) SIG
+(SEG X1=1.1700 Y1=1.1400 X2=1.1300 Y2=1.1400 W=0.0240 L=Top) SIG
+(SEG X1=1.1700 Y1=0.2900 X2=1.1300 Y2=0.2900 W=0.0240 L=Top) SIG
+(SEG X1=1.2700 Y1=0.2900 X2=1.3100 Y2=0.2900 W=0.0240 L=Top) SIG
+(SEG X1=1.2700 Y1=0.1900 X2=1.3100 Y2=0.1900 W=0.0240 L=Top) SIG
+(SEG X1=1.1700 Y1=0.1900 X2=1.1300 Y2=0.1900 W=0.0240 L=Top) SIG
+* (PLG Isolate=0.0000 Spacing=0.0500 Width=0.0000 Orphans=Off Pour=SOLID Thermals=Off Layer=Top) Polygon SIG Data
+  {POLYGON L="Top" T=POUR W=0.0000 ID=1 X=1.0100 Y=0.7700
+    (LINE X=1.0100 Y=0.8700 ) Polygon SIG
+    (LINE X=1.5410 Y=0.8700 ) Polygon SIG
+    (LINE X=1.5410 Y=0.5700 ) Polygon SIG
+    (LINE X=1.0100 Y=0.5700 ) Polygon SIG
+    (LINE X=1.0100 Y=0.6600 ) Polygon SIG
+    (LINE X=0.3650 Y=0.6600 ) Polygon SIG
+    (LINE X=0.3650 Y=0.7700 ) Polygon SIG
+    (LINE X=1.0100 Y=0.7700 ) Polygon SIG
+  }
+* (PLG Isolate=0.0000 Spacing=0.0500 Width=0.0000 Orphans=On Pour=SOLID Thermals=Off Layer=Top) Polygon SIG Data
+  {POLYGON L="Top" T=POUR W=0.0000 ID=2 X=0.3650 Y=1.0700
+    (LINE X=0.9200 Y=1.0700 ) Polygon SIG
+    (LINE X=0.9200 Y=0.9900 ) Polygon SIG
+    (LINE X=1.1800 Y=0.9900 ) Polygon SIG
+    (LINE X=1.1800 Y=1.0640 ) Polygon SIG
+    (LINE X=1.2600 Y=1.0640 ) Polygon SIG
+    (LINE X=1.2600 Y=0.9900 ) Polygon SIG
+    (LINE X=1.5910 Y=0.9900 ) Polygon SIG
+    (LINE X=1.5910 Y=0.9100 ) Polygon SIG
+    (LINE X=0.9200 Y=0.9100 ) Polygon SIG
+    (LINE X=0.9200 Y=0.8200 ) Polygon SIG
+    (LINE X=0.4950 Y=0.8200 ) Polygon SIG
+    (LINE X=0.4950 Y=0.9800 ) Polygon SIG
+    (LINE X=0.7800 Y=0.9800 ) Polygon SIG
+    (LINE X=0.7800 Y=1.0300 ) Polygon SIG
+    (LINE X=0.4450 Y=1.0300 ) Polygon SIG
+    (LINE X=0.4450 Y=0.8200 ) Polygon SIG
+    (LINE X=0.3650 Y=0.8200 ) Polygon SIG
+    (LINE X=0.3650 Y=1.0700 ) Polygon SIG
+  }
+* (PLG Isolate=0.0000 Spacing=0.0500 Width=0.0000 Orphans=Off Pour=SOLID Thermals=Off Layer=Top) Polygon SIG Data
+  {POLYGON L="Top" T=POUR W=0.0000 ID=3 X=0.3650 Y=0.3700
+    (LINE X=0.3650 Y=0.6100 ) Polygon SIG
+    (LINE X=0.4450 Y=0.6100 ) Polygon SIG
+    (LINE X=0.4450 Y=0.4100 ) Polygon SIG
+    (LINE X=0.8500 Y=0.4100 ) Polygon SIG
+    (LINE X=0.8500 Y=0.4600 ) Polygon SIG
+    (LINE X=0.4950 Y=0.4600 ) Polygon SIG
+    (LINE X=0.4950 Y=0.6100 ) Polygon SIG
+    (LINE X=0.9200 Y=0.6100 ) Polygon SIG
+    (LINE X=0.9200 Y=0.5300 ) Polygon SIG
+    (LINE X=1.5910 Y=0.5300 ) Polygon SIG
+    (LINE X=1.5910 Y=0.4500 ) Polygon SIG
+    (LINE X=1.2600 Y=0.4500 ) Polygon SIG
+    (LINE X=1.2600 Y=0.3800 ) Polygon SIG
+    (LINE X=1.1800 Y=0.3800 ) Polygon SIG
+    (LINE X=1.1800 Y=0.4500 ) Polygon SIG
+    (LINE X=0.9200 Y=0.4500 ) Polygon SIG
+    (LINE X=0.9200 Y=0.3700 ) Polygon SIG
+    (LINE X=0.3650 Y=0.3700 ) Polygon SIG
+  }
+* (PLG Isolate=0.0000 Spacing=0.0500 Width=0.0000 Orphans=Off Pour=SOLID Thermals=On Layer=Bottom) Polygon SIG Data
+  {POLYGON L="Bottom" T=POUR W=0.0000 ID=4 X=1.6680 Y=1.3100
+    (LINE X=1.6680 Y=0.1400 ) Polygon SIG
+    (LINE X=0.3200 Y=0.1400 ) Polygon SIG
+    (LINE X=0.3200 Y=1.3100 ) Polygon SIG
+    (LINE X=1.6680 Y=1.3100 ) Polygon SIG
+  }
+* (PLG Isolate=0.0000 Spacing=0.0500 Width=0.0000 Orphans=On Pour=SOLID Thermals=Off Layer=Top) Polygon SIG Data
+  {POLYGON L="Top" T=POUR W=0.0000 ID=5 X=1.2000 Y=0.3590
+    (LINE X=1.1800 Y=0.3800 ) Polygon SIG
+    (LINE X=1.2600 Y=0.3800 ) Polygon SIG
+    (LINE X=1.2400 Y=0.3600 ) Polygon SIG
+    (LINE X=1.2400 Y=0.2600 ) Polygon SIG
+    (LINE X=1.2000 Y=0.2600 ) Polygon SIG
+    (LINE X=1.2000 Y=0.3590 ) Polygon SIG
+  }
+* (PLG Isolate=0.0000 Spacing=0.0500 Width=0.0000 Orphans=On Pour=SOLID Thermals=Off Layer=Top) Polygon SIG Data
+  {POLYGON L="Top" T=POUR W=0.0000 ID=6 X=1.2400 Y=1.0850
+    (LINE X=1.2600 Y=1.0640 ) Polygon SIG
+    (LINE X=1.1800 Y=1.0640 ) Polygon SIG
+    (LINE X=1.2000 Y=1.0850 ) Polygon SIG
+    (LINE X=1.2000 Y=1.1700 ) Polygon SIG
+    (LINE X=1.2400 Y=1.1700 ) Polygon SIG
+    (LINE X=1.2400 Y=1.0850 ) Polygon SIG
+  }
+}
+
+{NET=HYP$TP1.TP
+(PIN X=1.2200 Y=0.2400 R=TP1.TP P=SMD006) Smd Dx: 0.0400  Dy: 0.0400
+}
+
+{NET=HYP$TP2.TP
+(PIN X=1.2200 Y=1.1900 R=TP2.TP P=SMD006) Smd Dx: 0.0400  Dy: 0.0400
+}
+
+{NET=N$ComNet
+(SEG X1=1.6790 Y1=0.5380 X2=1.7010 Y2=0.5380 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.5380 X2=1.7010 Y2=0.5420 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.5420 X2=1.6790 Y2=0.5420 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.5420 X2=1.6790 Y2=0.5380 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.5500 X2=1.7010 Y2=0.5500 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.5500 X2=1.7010 Y2=0.5540 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.5540 X2=1.6790 Y2=0.5540 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.5540 X2=1.6790 Y2=0.5500 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.5630 X2=1.7010 Y2=0.5630 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.5630 X2=1.7010 Y2=0.5670 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.5670 X2=1.6790 Y2=0.5670 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.5670 X2=1.6790 Y2=0.5630 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.6300 X2=1.7010 Y2=0.6300 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.6300 X2=1.7010 Y2=0.6340 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.6340 X2=1.6790 Y2=0.6340 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.6340 X2=1.6790 Y2=0.6300 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.6410 X2=1.7010 Y2=0.6410 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.6410 X2=1.7010 Y2=0.6450 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.6450 X2=1.6790 Y2=0.6450 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.6450 X2=1.6790 Y2=0.6410 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.9920 X2=1.7010 Y2=0.9920 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.9920 X2=1.7010 Y2=0.9960 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.9960 X2=1.6790 Y2=0.9960 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.9960 X2=1.6790 Y2=0.9920 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=1.0050 X2=1.7010 Y2=1.0050 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=1.0050 X2=1.7010 Y2=1.0090 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=1.0090 X2=1.6790 Y2=1.0090 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=1.0090 X2=1.6790 Y2=1.0050 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=1.0190 X2=1.7010 Y2=1.0190 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=1.0190 X2=1.7010 Y2=1.0230 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=1.0230 X2=1.6790 Y2=1.0230 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=1.0230 X2=1.6790 Y2=1.0190 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.4280 X2=1.7010 Y2=0.4280 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.4280 X2=1.7010 Y2=0.4320 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.4320 X2=1.6790 Y2=0.4320 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.4320 X2=1.6790 Y2=0.4280 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.4380 X2=1.7010 Y2=0.4380 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.4380 X2=1.7010 Y2=0.4420 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.4420 X2=1.6790 Y2=0.4420 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.4420 X2=1.6790 Y2=0.4380 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.4180 X2=1.7010 Y2=0.4180 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.4180 X2=1.7010 Y2=0.4220 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.4220 X2=1.6790 Y2=0.4220 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.4220 X2=1.6790 Y2=0.4180 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.7920 X2=1.7010 Y2=0.7920 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.7920 X2=1.7010 Y2=0.7960 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.7960 X2=1.6790 Y2=0.7960 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.7960 X2=1.6790 Y2=0.7920 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.8060 X2=1.7010 Y2=0.8060 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.8060 X2=1.7010 Y2=0.8100 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.8100 X2=1.6790 Y2=0.8100 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.8100 X2=1.6790 Y2=0.8060 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.7780 X2=1.7010 Y2=0.7780 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.7780 X2=1.7010 Y2=0.7820 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.7820 X2=1.6790 Y2=0.7820 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.7820 X2=1.6790 Y2=0.7780 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.6180 X2=1.7010 Y2=0.6180 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.6180 X2=1.7010 Y2=0.6220 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.6220 X2=1.6790 Y2=0.6220 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.6220 X2=1.6790 Y2=0.6180 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=0.9580 Y1=0.2790 X2=0.9800 Y2=0.2790 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=0.9800 Y1=0.2790 X2=0.9800 Y2=0.2830 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=0.9800 Y1=0.2830 X2=0.9580 Y2=0.2830 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=0.9580 Y1=0.2830 X2=0.9580 Y2=0.2790 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=0.9420 Y1=0.2790 X2=0.9640 Y2=0.2790 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=0.9640 Y1=0.2790 X2=0.9640 Y2=0.2830 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=0.9640 Y1=0.2830 X2=0.9420 Y2=0.2830 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=0.9420 Y1=0.2830 X2=0.9420 Y2=0.2790 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=0.9260 Y1=0.2790 X2=0.9480 Y2=0.2790 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=0.9480 Y1=0.2790 X2=0.9480 Y2=0.2830 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=0.9480 Y1=0.2830 X2=0.9260 Y2=0.2830 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=0.9260 Y1=0.2830 X2=0.9260 Y2=0.2790 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.8740 X2=1.7010 Y2=0.8740 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.8740 X2=1.7010 Y2=0.8780 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.8780 X2=1.6790 Y2=0.8780 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.8780 X2=1.6790 Y2=0.8740 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.8870 X2=1.7010 Y2=0.8870 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.8870 X2=1.7010 Y2=0.8910 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.8910 X2=1.6790 Y2=0.8910 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.8910 X2=1.6790 Y2=0.8870 W=0.0010 L=Top) Rectangle Segment Left
+(SEG X1=1.6790 Y1=0.9000 X2=1.7010 Y2=0.9000 W=0.0010 L=Top) Rectangle Segment Bottom
+(SEG X1=1.7010 Y1=0.9000 X2=1.7010 Y2=0.9040 W=0.0010 L=Top) Rectangle Segment Right
+(SEG X1=1.7010 Y1=0.9040 X2=1.6790 Y2=0.9040 W=0.0010 L=Top) Rectangle Segment Top
+(SEG X1=1.6790 Y1=0.9040 X2=1.6790 Y2=0.9000 W=0.0010 L=Top) Rectangle Segment Left
+}
+
+**********************************************************************
+* End of data
+*
+{END}
+
+{KEY=028-015E-4E5D}
+
