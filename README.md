@@ -6,7 +6,7 @@ demo simulation and validation files for jPCBSim
 <BR>
 <BR>
 <img src="https://github.com/tvelliott/jPCBSim_demos/blob/master/lorentz_experiment_koledintseva_et_al/lorentz_sim_results.gif">
-Lorentzian Paramter Extraction Results
+Lorentzian Parameter Extraction Results
 <BR>
 <BR>
 
