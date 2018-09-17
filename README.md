@@ -3,6 +3,9 @@ demo simulation and validation files for jPCBSim
 <BR>
 <img src="https://github.com/tvelliott/jPCBSim_demos/blob/master/bpf_915/bpf_915_filter_results.gif">
 915 MHz Bandpass Filter Results
+<BR><BR>
+Reference publication  https://rto.umac.mo/wp-content/uploads/docs/ruimartins_cv/publications/conferences/74.pdf
+<BR>
 <BR>
 <BR>
 <img src="https://github.com/tvelliott/jPCBSim_demos/blob/master/lorentz_experiment_koledintseva_et_al/lorentz_sim_results.gif">
