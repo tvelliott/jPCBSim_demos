@@ -11,7 +11,7 @@ Lorentzian Parameter Extraction Results
 <BR>
 
 For more information on the Lorentz parameter extraction demo / validation files, please see
-Dr. Koledintseva's papers that were utilized in an attempt to validate the Lorentzian parameters for FR4 in jPCBSim.
+Dr. Koledintseva's papers that were utilized in an attempt to validate the Lorentzian parameters for FR4 (up to 5 GHz) in jPCBSim.  The agreement in results up to 4 GHz are good, but likely can still be improved in the 4-5 GHz range.
 
 http://web.mst.edu/~marinak/files/My_publications/Papers/IEE_JEE.pdf
 
